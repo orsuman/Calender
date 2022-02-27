@@ -1,0 +1,39 @@
+<!-- 2022/02/27 カレンダー作成 */ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="calendar.css">
+<title>カレンダー</title>
+</head>
+<body onload = "on_load();">
+<script src="holiday_jp.js"></script>
+<script src="calendar.js"></script>
+<table id="dayCalendar">
+  <tr style="background-color: #dcdcdc;">
+  	<th colspan="7">
+  		<input type="text" id="seireki" class="seireki txtMiddle" value="" maxlength="6">年
+  		<input type="text" id="month" class="Tsuki txtMiddle" value="" maxlength="2">月
+  		<button id="searchBtn" class="txtMiddle changeMonth" onClick="changeMonth();">検索</button>
+  	</th>
+  </tr>
+  <tr style="background-color: #f0e68c;">
+  	<th colspan="1">
+	  <span  id="downMonth" class="changeMonth" onClick="changeMonth(0);">＜</span>
+    </th>
+    <th colspan="5">
+	  <span id="displayYear" value=""></span>年<span id="displayMonth" value=""></span>月
+	</th>
+	<th colspan="1">
+	  <span id="upMonth" class="changeMonth" onClick="changeMonth(1);">＞</span></font>
+	</th>
+  </tr>
+  <tr style="background-color: #f5deb3;">
+	<th class="holiday">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday">土</th>
+  </tr>
+</table>
+<br>
+<button id="searchBtn" class="changeMonth" onClick="on_load(0);">当月に戻す</button>
+</body>
+</html>

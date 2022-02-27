@@ -1,0 +1,48 @@
+/* 2022/02/27 カレンダー作成 */
+
+th.holiday {
+	color:red;
+}
+
+th.saturday {
+	color:blue;
+}
+
+.seireki {
+width:90px;
+height:30px;
+text-align: center;
+font-size: 18px;
+}
+
+.Tsuki {
+width:45px;
+height:30px;
+text-align: center;
+font-size: 18px;
+}
+
+.txtMiddle {
+vertical-align:middle;
+}
+
+.dailyColor {
+background-color:#fafad2;
+}
+
+th {
+	font-size: 35px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: solid 1px black;
+  /*実線 1px 黒*/
+}
+
+.changeMonth {
+	cursor: pointer;
+}
